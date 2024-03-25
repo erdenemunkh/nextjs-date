@@ -1,6 +1,7 @@
 import dayjs from "dayjs"
 import { NextResponse } from "next/server";
 
+export const revalidate = 0;
 export async function GET() {
   const date1 = new Date();
   const date2 = dayjs();
@@ -11,3 +12,6 @@ export async function GET() {
     date1, date2, json
   })
 }
+
+
+
